@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ChatManager API</title>
+</head>
+<body>
+    <div class="top">
+        <div class="head">
+            <h1>All Chats</h1><br>
+        </div>
+        
+        <a href="/chats/new"><button class="new"><i class="fa-solid fa-plus" style="color: rgb(0, 0, 0);"></i> Add new chat</button></a><br><br><br>
+    </div>
+
+    <% for(chat of chats) { %>
+        <div class="chat">
+            <p><b><i><%= chat.from %></i></b> to <b><i><%= chat.to %></i></b></p>
+            <div class="msg">
+                <p><%= chat.msg %></p>
+            </div><hr>
+            <p><%= chat.created_at.toString().split(" ")[4] %></p>
+            <p><%= chat.created_at.toString().split(" ").slice(0, 4).join("-") %></p><hr>
+            <a href="/chats/<%= chat._id %>/edit"><button class="edit"><i class="fa-regular fa-pen-to-square" style="color: rgb(255,255,255);"></i> Edit</button></a>
+            <a href="/chats/<%= chat._id %>/delete"><button class="delete"><i class="fa-regular fa-trash-can" style="color: rgb(0,0,0);"></i> Delete</button></a>
+        </div><br><br>
+    <% } %>
+    
+</body>
+</html>

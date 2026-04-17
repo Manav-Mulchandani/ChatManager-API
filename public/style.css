@@ -1,0 +1,268 @@
+body{
+    margin-left: 20px;
+    background-color: whitesmoke;
+}
+
+.chat{
+    background-color: rgb(197, 231, 197);
+    padding: 8px;
+    border-radius: 20px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+.msg{
+    background-color: limegreen;
+    color: black;
+    padding: 0.5px 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.new{
+    background-color: rgb(65, 200, 124);
+    height: 2.5rem;
+    border-radius: 10px;
+}
+
+.new:hover{
+    background-color: rgb(32, 178, 115);
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+    cursor: pointer;
+
+}
+
+.edit{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    height: 2rem;
+    font-style: italic;
+}
+
+.edit:hover{
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.delete{
+    background-color: rgba(255, 0, 0, 0.801);
+    color: black;
+    border-radius: 10px;
+    height: 2rem;
+    font-style: italic;
+    margin-left: 0.5rem;
+}
+
+.delete:hover{
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.head{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgba(197, 231, 197, 0.41);
+    height: 4rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border: 3px solid black;
+    border-radius: 16px;
+    text-align: center;
+    align-self: center;
+    position: relative;
+    top: 10px;
+}
+
+.head h1{
+    position: relative;
+    bottom: 12px;
+}
+
+.top{
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 170px;
+    margin-bottom: 20px;
+}
+
+.new_form{
+    background-color: rgb(197, 231, 197);
+    width: 30%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 30px;
+
+}
+
+.new_form input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    border: 1.5px solid black;
+}
+
+.new_form textarea{
+    width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    border: 1.5px solid black;
+}
+
+.new_form button{
+    background-color: rgb(65, 200, 124);
+    height: 2.5rem;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.new_form button:hover{
+    background-color: rgb(32, 178, 115);
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.new_form input:focus, .new_form textarea:focus{
+    outline: none;
+    border: 2px solid rgb(65, 200, 124);
+    box-shadow: 0 0 5px rgb(65, 200, 124);
+}
+
+.new_form input::placeholder, .new_form textarea::placeholder{
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+
+.new_form h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.edit_form{
+    background-color: rgb(197, 231, 197);
+    width: 30%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 30px;
+    
+}
+
+.edit_form textarea{
+    width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    border: 1.5px solid black;
+}
+
+.edit_form button{
+    background-color: rgb(65, 200, 124);
+    height: 2.5rem;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.edit_form h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.edit_form textarea:focus{
+    outline: none;
+    border: 2px solid rgb(65, 200, 124);
+    box-shadow: 0 0 5px rgb(65, 200, 124);
+}
+
+.edit_form textarea::placeholder{
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+
+.edit_form button:hover{
+    background-color: rgb(32, 178, 115);
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.delete_div{
+    background-color: rgb(197, 231, 197);
+    width: 30%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.delete_div h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.delete_div button{
+    background-color: rgb(65, 200, 124);
+    height: 2.5rem;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.delete_div button:hover{
+    background-color: rgb(32, 178, 115);
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.delete_div a button{
+    background-color: rgba(213, 0, 0, 0.783);
+    color: black;
+    border-radius: 10px;
+    height: 2.5rem;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.delete_div a button:hover{
+    background-color: rgb(200, 0, 0);
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.delete_div h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 900px) {
+    .new_form{
+        width: 90%;
+    }
+    .edit_form{
+        width: 90%;
+    }
+    .delete_div{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        margin-left: 10px;
+    }
+}
+
