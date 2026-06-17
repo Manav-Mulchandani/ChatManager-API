@@ -29,6 +29,14 @@ The application simulates a real-world messaging backend where users can create 
 
 ---
 
+## 📽️ Demo video of the project
+
+```bash
+Video link : https://drive.google.com/file/d/1fsp_b65S76YYaSr9WE0zxzBCKF-gj9_R/view?usp=drive_link
+```
+
+---
+
 ## 📂 Project Structure
 
 ```
