@@ -1,11 +1,15 @@
 const mongoose = require('mongoose');
 const Chat=require('./models/chat.js');
 
-main().then(res=>{console.log(res)}).catch(err => console.log(err));
+require('dotenv').config();
 
-async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/chat_manager_api');
-
+async function connectDB() {
+  try {
+    await mongoose.connect(process.env.MONGO_URI);
+    console.log("DB Connected");
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 Chat.insertMany([
