@@ -12,6 +12,8 @@ async function connectDB() {
   }
 }
 
+connectDB();
+
 Chat.insertMany([
     {
         from:'Neha',
