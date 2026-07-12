@@ -7,7 +7,7 @@
     <title>Edit chat</title>
 </head>
 <body>
-    <form action="/chats/<%= id %>?_method=PATCH" method="post" class="edit_form">
+    <form action="/chats/<%= chat._id %>?_method=PATCH" method="post" class="edit_form">
         <h2>Sender: <%= chat.from %></h2>
         <h2>Receiver: <%= chat.to %></h2><hr>
         <h3>Enter new message: </h3>
